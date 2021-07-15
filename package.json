@@ -1,0 +1,48 @@
+{
+  "name": "nwjs_project_admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./node_modules/cross-env/src/bin/cross-env WEBPACK_MODE=development webpack serve --config ./build/webpack.dev.js",
+    "build": "node ./node_modules/cross-env/src/bin/cross-env WEBPACK_MODE=production webpack --config ./build/webpack.build.js --progress --no-color",
+    "release": "node scripts/release.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "nprogress": "^0.2.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.1",
+    "wangeditor": "^4.6.5"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "cmdhelper": "git+https://github.com.cnpmjs.org/lilindog/cmdhelper",
+    "cross-env": "^7.0.3",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.10",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.12.0",
+    "file-loader": "^2.0.0",
+    "filehelper": "git+https://github.com.cnpmjs.org/lilindog/filehelper",
+    "html-webpack-plugin": "^5.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "parseenv": "git+https://github.com.cnpmjs.org/lilindog/parseenv",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "vue-loader": "^15.9.7",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^5.24.2",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
